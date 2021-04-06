@@ -19,7 +19,7 @@ DINGTALK_URL="https://oapi.dingtalk.com/robot/send?access_token=88ea3f462739b17d
 function sendDingTalk(){
     curl "$DINGTALK_URL" -H 'Content-Type: application/json' -d "{
         \"msgtype\": \"text\",
-        \"text\": {\"content\": \"$CONTENT\"},
+        \"text\": {\"content\": \"早上好，又是新的一天，$CONTENT\"},
     }"
 }
 # execute function
